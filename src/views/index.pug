@@ -1,0 +1,14 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "Valentina Laikovskaya Photography"
+
+block content
+	include ../blocks/modules/header/header.pug
+	include ../blocks/modules/about/about.pug
+	include ../blocks/modules/contacts/contacts.pug
+	include ../blocks/modules/footer/footer.pug
+
+block scripts
+	script(src="../js/main.js")

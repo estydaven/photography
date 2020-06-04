@@ -1,0 +1,14 @@
+.footer{
+    background: $black;
+    color: $white;
+    text-align: center;
+    padding: 10px 50px;
+    font-size: 12px;
+}
+.footer-wrapper__text{
+    padding-bottom: 5px;
+
+    &:last-child{
+        padding-bottom: 0;
+    }
+}

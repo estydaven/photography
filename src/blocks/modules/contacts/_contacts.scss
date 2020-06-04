@@ -1,0 +1,124 @@
+.contacts{
+    background-image: url(../img/portfolio/bg6.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center -340px;
+    position: relative;    
+}
+.contacts-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 180px 50px 150px 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.contacts-title{
+    flex: 1;
+}
+.contacts-title__header{
+    color: $white;
+    font-family: 'raleway_thin';
+    font-size: 150px;
+    line-height: 130px;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 100px; 
+}
+.contacts-info{
+    flex: 1;
+    color: $white; 
+     
+}
+.contacts-info__header{
+    font-size: 35px;
+    font-family: 'raleway_thin';
+    margin-bottom: 40px;
+}
+.contacts-info__text{
+    font-family: 'raleway_thin';
+}
+.social-icons {
+    padding: 0;
+    list-style: none;
+    margin: 10px 10px 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    &_contact{
+        flex-direction: column;
+        align-items: flex-start;
+    }   
+}
+.social-icons__item {
+    margin: 3px 3px 10px 0;
+    position: relative;
+    font-size: 17px;
+
+    &_contacts{
+        display: flex;
+        align-items: center;
+    }
+}
+.icons-link {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    
+    &_round{
+        border: 1px solid $blue;
+        border-radius: 4px;
+    }
+  
+    &:before {
+        @include transformScale();
+        content: " ";
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        display: block;
+        background: transparent;
+        transition: all $timing ease-out;
+    }
+    
+    &:hover:before {
+        transform: scale(0);
+        transition: all $timing ease-in;
+    }
+    
+    &:hover i {
+        @include transformScale(1.8);
+        color: transparent;        
+        background: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: $lightblue;
+        transition: all $timing ease-in;
+    }
+}
+.fa {
+    color: $white;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    transition: all $timing ease-out;
+}
+.social-square {      
+    &:before {
+        background: $lightblue;
+        border-radius: 10%;
+    }
+  
+    &:hover:before {
+        transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+        -webkit-transform: scale(-180deg);
+        border-radius: 100%;
+    }
+    
+    &:hover i {
+        @include transformScale(1.2);
+        color: $white;
+        transform: scale(1.2);
+        -webkit-text-fill-color: $white;
+    }
+}

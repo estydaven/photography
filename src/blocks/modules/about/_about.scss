@@ -1,0 +1,36 @@
+.about{
+    background-image: url(../img/portfolio/bg4.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center -160px;
+    position: relative;    
+}
+.about-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 200px 50px 150px 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.about-title{
+    flex: 1;
+}
+.about-title__header{
+    color: $white;
+    font-family: 'raleway_thin';
+    font-size: 150px;
+    line-height: 130px;
+}
+.about-info{
+    flex: 1;
+    color: $white;  
+    padding-top: 100px;  
+}
+.about-info__header{
+    font-size: 35px;
+    font-family: 'raleway_thin';
+    margin-bottom: 40px;
+}
+.about-info__text{
+    font-family: 'raleway_thin';
+}
