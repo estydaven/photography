@@ -1266,6 +1266,8 @@ template {
   justify-content: space-between;
   padding: 335px 50px 362px 50px;
   transition: all linear 1s;
+  min-height: 100vh;
+  height: 100vh;
 }
 
 .portfolio-wrapper:hover {
