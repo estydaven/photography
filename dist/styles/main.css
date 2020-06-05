@@ -1264,7 +1264,6 @@ template {
   display: flex;
   position: relative;
   justify-content: space-between;
-  padding: 335px 50px 362px 50px;
   transition: all linear 1s;
   min-height: 100vh;
   height: 100vh;
