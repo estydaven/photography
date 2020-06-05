@@ -1241,6 +1241,7 @@ template {
   background-position: center center;
   position: relative;
   min-height: 100vh;
+  height: 100vh;
 }
 
 .portfolio_nature {
