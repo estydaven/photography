@@ -1,0 +1,26 @@
+.nature-header{    
+    background-image: url(../img/page-nature/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;  
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    min-height: 100vh;
+    height: 100vh;    
+}
+.nature-header__title{
+    background: #ffb5b6; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffb5b6 0%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffb5b6 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffb5b6 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb5b6', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+    color: transparent;
+    font-family: 'raleway_black';
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding-top: 20px;
+    font-size: 170px;
+}

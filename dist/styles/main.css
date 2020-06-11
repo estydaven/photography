@@ -900,21 +900,21 @@ template {
 
 #p_prldr .svg_anm {
   position: absolute;
-  width: 41px;
-  height: 41px;
-  background: url(../img/svg/pufff.svg) center center no-repeat;
-  background-size: 41px;
-  margin: -16px 0 0 -16px;
+  width: 250px;
+  height: 250px;
+  background: url(../img/svg/bird2.svg) center center no-repeat;
+  background-size: 241px;
+  margin: 0 auto;
 }
 
 .contpre {
-  width: 250px;
-  height: 100px;
+  width: 100%;
+  height: auto;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #ffffff;
   font-size: 40px;
   letter-spacing: -2px;
   text-align: center;
@@ -1267,6 +1267,26 @@ template {
   opacity: 1;
 }
 
+.portfolio-wrapper:hover .petal-one {
+  opacity: 1;
+}
+
+.portfolio-wrapper:hover .petal-two {
+  opacity: 1;
+}
+
+.portfolio-wrapper:hover .petal-three {
+  opacity: 1;
+}
+
+.portfolio-wrapper:hover .petal-four {
+  opacity: 1;
+}
+
+.portfolio-wrapper:hover .petal-five {
+  opacity: 1;
+}
+
 .portfolio-title {
   flex: 1;
 }
@@ -1304,8 +1324,8 @@ template {
   position: absolute;
   top: -10px;
   left: 0;
-  background-color: #93c46a;
-  border: 2px solid darkgreen;
+  background-color: #8ac361;
+  border: 2px solid #006400;
   width: 20px;
   height: 30px;
   border-radius: 90% 0 90% 0;
@@ -1409,63 +1429,48 @@ template {
 
 .flower {
   position: absolute;
-  top: -20px;
+  top: -38px;
   right: -27px;
   margin: auto;
-  width: 50px;
-  height: 150px;
-  opacity: 0;
+  width: 80px;
+  height: 80px;
+  opacity: 1;
   transition: all linear 1s;
 }
 
-.flower:after {
-  content: '';
-  position: absolute;
-  width: 2px;
-  height: 43px;
-  display: block;
-  top: 29px;
-  right: 29px;
-  border-right: 2px solid darkgreen;
-  border-radius: 100% 0;
+.petal-one {
+  fill: #c4324d;
+  opacity: 0;
+  transition: all linear 1s;
+  animation: flower-color 2s linear infinite 2s;
 }
 
-.petal {
-  position: relative;
-  margin-left: 10px;
-  width: 13px;
-  height: 18px;
-  background: crimson;
-  border-radius: 50%;
+.petal-two {
+  fill: #d64762;
+  opacity: 0;
+  transition: all linear 1s;
+  animation: flower-color 2s linear infinite 2.7s;
 }
 
-.petal::before,
-.petal::after {
-  position: absolute;
-  top: 0;
-  content: "";
-  display: block;
-  width: 13px;
-  height: 18px;
-  background: crimson;
-  border-radius: 50%;
+.petal-three {
+  fill: #d64762;
+  opacity: 0;
+  transition: all linear 1s;
+  animation: flower-color 2s linear infinite 2.7s;
 }
 
-.petal::before {
-  transform: rotate(-120deg);
-  transform-origin: 5px 20px;
+.petal-four {
+  fill: #e36078;
+  opacity: 0;
+  transition: all linear 1s;
+  animation: flower-color 2s linear infinite 1.4s;
 }
 
-.petal::after {
-  transform: rotate(120deg);
-  transform-origin: 5px 20px;
-}
-
-.petal:nth-child(2) {
-  position: absolute;
-  top: 0;
-  transform: rotate(180deg);
-  transform-origin: 5px 20px;
+.petal-five {
+  fill: #e36078;
+  opacity: 0;
+  transition: all linear 1s;
+  animation: flower-color 2s linear infinite 1.4s;
 }
 
 .bird {
@@ -1480,16 +1485,6 @@ template {
   transition: all linear 1s;
 }
 
-@-webkit-keyframes to-fly {
-  50% {
-    transform: translateY(-3px);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
-}
-
 @keyframes to-fly {
   50% {
     transform: translateY(-3px);
@@ -1497,16 +1492,6 @@ template {
 
   100% {
     transform: translateY(0px);
-  }
-}
-
-@-webkit-keyframes wing-beat-right {
-  50% {
-    transform: rotateX(60deg) skew(-20deg) rotateZ(25deg);
-  }
-
-  100% {
-    transform: rotateX(0) skew(-20deg);
   }
 }
 
@@ -1520,7 +1505,7 @@ template {
   }
 }
 
-@-webkit-keyframes wing-beat-left {
+@keyframes wing-beat-left {
   50% {
     transform: rotateX(-65deg) skew(20deg) rotateZ(-10deg);
   }
@@ -1530,14 +1515,47 @@ template {
   }
 }
 
-@keyframes wing-beat-left {
-  50% {
-    transform: rotateX(-65deg) skew(20deg) rotateZ(-10deg);
+@keyframes flower-color {
+  from {
+    fill: #c4324d;
   }
 
-  100% {
-    transform: rotateX(0) skew(20deg);
+  to {
+    fill: #e36078;
   }
+}
+
+.nature-header {
+  background-image: url(../img/page-nature/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  height: 100vh;
+}
+
+.nature-header__title {
+  background: #ffb5b6;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ffb5b6 0%, #7db9e8 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffb5b6 0%, #7db9e8 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffb5b6 0%, #7db9e8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb5b6', endColorstr='#7db9e8',GradientType=0 );
+  /* IE6-9 */
+  color: transparent;
+  font-family: 'raleway_black';
+  text-align: center;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  padding-top: 20px;
+  font-size: 170px;
 }
 
 @media screen and (min-width: 36rem) {

@@ -7,30 +7,30 @@
 	top: 0;
 	right: 0;
 	bottom: 0;
-	background: #89bfe7;
+	background: $lightblue;
 	z-index: 30;
 	.svg_anm {
 		position: absolute;
-		width: 41px;
-		height: 41px;
-		background: url(../img/svg/pufff.svg) center center no-repeat;
-		background-size: 41px;
-		margin: -16px 0 0 -16px;
+		width: 250px;
+		height: 250px;
+		background: url(../img/svg/bird2.svg) center center no-repeat;
+		background-size: 241px;
+		margin: 0 auto;
 	}
 }
 .contpre {
 	small {
 		font-size: 25px;
 	}
-	width: 250px;
-	height: 100px;
-	position: relative;
+	width: 100%;
+    height: auto;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-	color: #fff;
-	font-size: 40px;
-	letter-spacing: -2px;
-	text-align: center;
-	line-height: 35px;
+    color: $white;
+    font-size: 40px;
+    letter-spacing: -2px;
+    text-align: center;
+    line-height: 35px;
 }
