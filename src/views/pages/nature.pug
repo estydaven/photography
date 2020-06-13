@@ -4,7 +4,10 @@ block variables
 	- const title = "Nature";
 
 block content
+	include ../../blocks/components/preloader/preloader.pug
 	include ../../blocks/modules/nature-block/nature-block.pug
 	include ../../blocks/modules/footer/footer.pug
 
 block scripts
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js")
+	script(src="js/main.js")

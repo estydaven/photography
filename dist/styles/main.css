@@ -1558,6 +1558,196 @@ template {
   font-size: 170px;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.one {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-image: url(../img/page-nature/2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: center center;
+  height: 80vh;
+}
+
+.two {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background-image: url(../img/page-nature/3.jpg);
+  background-repeat: no-repeat;
+  background-size: 120% 120%;
+  background-position: center center;
+  transition: all linear 1s;
+}
+
+.two:hover {
+  background-size: 100% 100%;
+}
+
+.three {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  overflow: hidden;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transition: all linear 1s;
+}
+
+.overlay_three {
+  background-image: url(../img/page-nature/6.jpg);
+}
+
+.overlay_four {
+  background-image: url(../img/page-nature/4.jpg);
+}
+
+.overlay_five {
+  background-image: url(../img/page-nature/5.jpg);
+}
+
+.overlay_six {
+  background-image: url(../img/page-nature/7.jpg);
+}
+
+.overlay:hover {
+  transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+}
+
+.overlay-back {
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  transition: all linear 1s;
+}
+
+.overlay-back_seven {
+  background-image: url(../img/page-nature/11.jpg);
+  transform: scale(1.2) translateY(-8%);
+}
+
+.overlay-back_seven:hover {
+  transform: translateY(0%);
+}
+
+.four {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  overflow: hidden;
+}
+
+.five {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  overflow: hidden;
+}
+
+.six {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  overflow: hidden;
+}
+
+.seven {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  overflow: hidden;
+}
+
+.eight {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background-image: url(../img/page-nature/10.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: center center;
+}
+
+.nine {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.ten {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.eleven {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.twelve {
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+
+.thirteen {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 7;
+  grid-row-end: 10;
+}
+
+.fourteen {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.fiveteen {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.sixteen {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.seventeen {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.eighteen {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.nineteen {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.twenty {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
 @media screen and (min-width: 36rem) {
   .container {
     max-width: 31.875rem;
