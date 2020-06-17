@@ -16,6 +16,7 @@
 		background: url(../img/svg/bird2.svg) center center no-repeat;
 		background-size: 241px;
 		margin: 0 auto;
+		animation: opacity 2s linear infinite;
 	}
 }
 .contpre {
@@ -33,4 +34,12 @@
     letter-spacing: -2px;
     text-align: center;
     line-height: 35px;
+}
+@keyframes opacity{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }

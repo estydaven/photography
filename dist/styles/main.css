@@ -905,6 +905,7 @@ template {
   background: url(../img/svg/bird2.svg) center center no-repeat;
   background-size: 241px;
   margin: 0 auto;
+  animation: opacity 2s linear infinite;
 }
 
 .contpre {
@@ -923,6 +924,16 @@ template {
 
 .contpre small {
   font-size: 25px;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .header {
@@ -1004,6 +1015,21 @@ template {
   border-bottom-color: #4bbdd5;
   border-left-color: #4bbdd5;
   transition: border-color 0s ease-out 0.5s,  width 0.25s ease-out 0.5s,  height 0.25s ease-out 0.75s;
+}
+
+.nav-scroll {
+  background-color: #2e2e2e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 13px;
+  transition: all linear .4s;
+  border-bottom: 2px solid #80b7e3;
 }
 
 .footer {

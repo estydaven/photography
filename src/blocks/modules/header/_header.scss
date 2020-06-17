@@ -72,3 +72,17 @@
           height 0.25s ease-out 0.75s; 
     }
 }
+.nav-scroll{
+    background-color: $dark-gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 13px;
+    transition: all linear .4s;
+    border-bottom: 2px solid #80b7e3;
+}

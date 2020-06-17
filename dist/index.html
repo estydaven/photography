@@ -34,16 +34,16 @@
         </div>
         <div class="header-wrapper__right">
           <nav class="nav">
-            <ul class="nav-list">
-              <li class="nav-list__item"> <a class="nav-list__link" href="portfolio.html" target="_blank">Portfolio</a></li>
-              <li class="nav-list__item"> <a class="nav-list__link" href="">About</a></li>
-              <li class="nav-list__item"> <a class="nav-list__link" href="">Contacts</a></li>
+            <ul class="nav-list" id="nav">
+              <li class="nav-list__item"> <a class="nav-list__link" href="portfolio.html">Portfolio</a></li>
+              <li class="nav-list__item"> <a class="nav-list__link scroll-to" href="#about">About</a></li>
+              <li class="nav-list__item"> <a class="nav-list__link scroll-to" href="#contacts">Contacts</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-wrapper">
         <div class="about-title">
           <h2 class="about-title__header">About <br class="about-title__br">me.</h2>
@@ -54,7 +54,7 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" id="contacts">
       <div class="contacts-wrapper">
         <div class="contacts-info">
           <h3 class="contacts-info__header">Write me</h3>
@@ -90,5 +90,7 @@
         <p class="footer-wrapper__text">Your ad could be here</p>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
