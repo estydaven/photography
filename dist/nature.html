@@ -24,6 +24,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
   </head>
   <body>
@@ -31,14 +33,14 @@
       <div class="contpre"><span class="svg_anm"></span></div>
     </div>
     <section class="nature-header">
-      <h2 class="nature-header__title">Nature.</h2>
-      <div class="nature-arrow"><a class="nature-arrow__button" href="#down">
+      <h2 class="nature-header__title">Nature</h2>
+      <div class="nature-arrow"><a class="nature-arrow__button scroll-to" href="#down">
           <svg id="ec6ca7c9-bfc0-4ab1-87c3-ea5e815431b5" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" width="14.4853" height="44.2426" viewBox="0 0 14.4853 44.2426">
             <title>Arrow-down</title>
             <polygon points="13.071 35.454 8.242 40.283 8.243 0 6.243 0 6.242 40.585 1.414 35.757 0 37.172 7.071 44.243 7.394 43.919 7.414 43.94 14.485 36.868 13.071 35.454" style="fill:#fff;"></polygon>
           </svg></a></div>
     </section>
-    <section class="grid grid__nature">
+    <section class="grid grid__nature" id="down">
       <div class="grid-block one"> </div>
       <div class="grid-block two"> </div>
       <div class="grid-block three"> 
@@ -59,17 +61,51 @@
       <div class="grid-block eight"> 
         <div class="overlay-back overlay-back_eight"></div>
       </div>
-      <div class="grid-block nine"> </div>
-      <div class="grid-block ten"> </div>
+      <div class="grid-block nine"> 
+        <div class="nine__wrapper">
+          <div class="nine-insects">   
+            <h1 class="nine-insects__title">Wonderful Insects</h1>
+            <p class="nine-insects__subtitle">Amazing and unique insects</p><a class="nine-insects__link" href="insects.html">Explore The Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="grid-block ten">
+        <div class="ten__wrapper"> 
+          <div class="owl-carousel">
+            <div class="owl-carousel__item"><img src="img/page-nature/9.webp" alt=""></div>
+            <div class="owl-carousel__item"><img src="img/page-nature/12.webp" alt=""></div>
+            <div class="owl-carousel__item"><img src="img/page-nature/15.webp" alt=""></div>
+          </div>
+        </div>
+      </div>
       <div class="grid-block eleven"> </div>
-      <div class="grid-block twelve"> </div>
+      <div class="grid-block twelve"> 
+        <div class="nine__wrapper nine__wrapper_flowers">
+          <div class="nine-insects">   
+            <h1 class="nine-insects__title">Delightful flowers</h1>
+            <p class="nine-insects__subtitle">Colorful explosion</p><a class="nine-insects__link" href="flowers.html">Explore The Project</a>
+          </div>
+        </div>
+      </div>
       <div class="grid-block thirteen"> </div>
-      <div class="grid-block fourteen"> </div>
-      <div class="grid-block fiveteen"> </div>
-      <div class="grid-block sixteen"> </div>
-      <div class="grid-block seventeen"> </div>
-      <div class="grid-block eighteen"> </div>
-      <div class="grid-block nineteen"> </div>
+      <div class="grid-block fourteen"> 
+        <div class="grid-wrap"></div>
+      </div>
+      <div class="grid-block fiveteen"> 
+        <div class="overlay-wrap overlay-wrap_fiveteen"></div>
+      </div>
+      <div class="grid-block sixteen"> 
+        <div class="overlay-wrap overlay-wrap_sixteen"></div>
+      </div>
+      <div class="grid-block seventeen"> 
+        <div class="grid-wrap"></div>
+      </div>
+      <div class="grid-block eighteen"> 
+        <div class="grid-wrap"></div>
+      </div>
+      <div class="grid-block nineteen"> 
+        <div class="overlay-wrap overlay-wrap_nineteen"></div>
+      </div>
       <div class="grid-block twenty"> </div>
     </section>
     <footer class="footer">
@@ -80,6 +116,7 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

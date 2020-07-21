@@ -1,7 +1,7 @@
 section.nature-header
-    h2.nature-header__title Nature.
+    h2.nature-header__title Nature
     include ../../components/arrow-down/arrow-down.pug
-section.grid.grid__nature
+section.grid.grid__nature#down
     .grid-block.one 
     .grid-block.two 
     .grid-block.three 
@@ -17,14 +17,39 @@ section.grid.grid__nature
     .grid-block.eight 
         .overlay-back.overlay-back_eight
     .grid-block.nine 
-    .grid-block.ten 
+        .nine__wrapper
+            .nine-insects    
+                h1.nine-insects__title Wonderful Insects
+                p.nine-insects__subtitle Amazing and unique insects
+                a(href="insects.html").nine-insects__link Explore The Project
+    .grid-block.ten
+        .ten__wrapper 
+            .owl-carousel
+                .owl-carousel__item
+                    img(src="img/page-nature/9.webp", alt="")       
+                .owl-carousel__item
+                    img(src="img/page-nature/12.webp", alt="")   
+                .owl-carousel__item
+                    img(src="img/page-nature/15.webp", alt="")              
     .grid-block.eleven 
     .grid-block.twelve 
+        .nine__wrapper.nine__wrapper_flowers
+            .nine-insects    
+                h1.nine-insects__title Delightful flowers
+                p.nine-insects__subtitle Colorful explosion
+                a(href="flowers.html").nine-insects__link Explore The Project
     .grid-block.thirteen 
     .grid-block.fourteen 
+        .grid-wrap
     .grid-block.fiveteen 
+        .overlay-wrap.overlay-wrap_fiveteen
     .grid-block.sixteen 
+        .overlay-wrap.overlay-wrap_sixteen
     .grid-block.seventeen 
+        .grid-wrap
     .grid-block.eighteen 
+        .grid-wrap
     .grid-block.nineteen 
+        .overlay-wrap.overlay-wrap_nineteen
     .grid-block.twenty 
+

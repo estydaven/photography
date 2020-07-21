@@ -1,5 +1,5 @@
 .nature-header{    
-    background-image: url(../img/page-nature/1.jpg);
+    background-image: url(../img/page-nature/1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -27,22 +27,21 @@
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 90vh);
 }
 .one{
     grid-column-start: 1;
-    grid-column-end: 3;
-    background-image: url(../img/page-nature/2.jpg);
+    grid-column-end: 3; 
+    background-image: url(../img/page-nature/2.webp);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
     background-position: center center;
-    height: 80vh;
 }
 .two{
     grid-column-start: 3;
     grid-column-end: 5;
-    background-image: url(../img/page-nature/3.jpg);
+    background-image: url(../img/page-nature/3.webp);
     background-repeat: no-repeat;
     background-size: 120% 120%;
     background-position: center center;
@@ -54,10 +53,8 @@
 }
 .three{
     grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;  
-    overflow: hidden; 
+    grid-column-end: 2; 
+    overflow: hidden;  
 }
 .overlay{
     height: 100%;
@@ -68,16 +65,19 @@
     transition: all linear 1s;
 
     &_three{
-        background-image: url(../img/page-nature/6.jpg);   
+        background-image: url(../img/page-nature/6.webp);   
     }
     &_four{
-        background-image: url(../img/page-nature/4.jpg);   
+        background-image: url(../img/page-nature/4.webp);   
     }
     &_five{
-        background-image: url(../img/page-nature/5.jpg);   
+        background-image: url(../img/page-nature/5.webp);   
     }
     &_six{
-        background-image: url(../img/page-nature/7.jpg);   
+        background-image: url(../img/page-nature/7.webp);   
+    }
+    &_fifteen{
+        background-image: url(../img/page-nature/7.webp);   
     }
 
     &:hover{
@@ -93,7 +93,7 @@
     transition: all linear 1s;
 
     &_seven{
-        background-image: url(../img/page-nature/11.jpg);
+        background-image: url(../img/page-nature/11.webp);
         transform: scale(1.2) translateY(-8%); 
 
         &:hover{
@@ -103,23 +103,17 @@
 }
 .four{
     grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;   
+    grid-column-end: 3; 
     overflow: hidden;  
 }
 .five{
     grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;    
+    grid-column-end: 4;   
     overflow: hidden; 
 }
 .six{
     grid-column-start: 4;
     grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;  
     overflow: hidden; 
 }
 .seven{
@@ -130,7 +124,7 @@
 .eight{
     grid-column-start: 3;
     grid-column-end: 5;
-    background-image: url(../img/page-nature/10.jpg);
+    background-image: url(../img/page-nature/10.webp);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -139,50 +133,178 @@
 .nine{
     grid-column-start: 1;
     grid-column-end: 5;
+    background-image: url(../img/page-nature/21.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    position: relative;   
+}
+.nine__wrapper{
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 50px;
+    transition: all linear 1s;
+    height: 100%;
+
+    &_flowers{
+        align-items: flex-end;
+        padding-bottom: 50px;
+    }
+
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.4); 
+
+        .nine-insects__link{
+            opacity: 1;
+        }
+    }
+}
+.nine-insects{
+   text-align: left;
+   color: $white;
+   font-family: 'raleway_thin';
+}
+.nine-insects__title{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.nine-insects__subtitle{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.nine-insects__link{
+    opacity: 0;
+    color: $white;
+    font-size: 20px;
+    font-family: 'raleway_regular';
+    transition: all linear 1s;
 }
 .ten{
     grid-column-start: 1;
     grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+.owl-dots{
+    display: none;
 }
 .eleven{
     grid-column-start: 1;
     grid-column-end: 2;
+    background-image: url(../img/page-nature/18.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;   
+}
+.owl-carousel .owl-item img{
+    height: 95vh;
+    object-fit: cover;
 }
 .twelve{
     grid-column-start: 2;
     grid-column-end: 5;
+    background-image: url(../img/page-nature/22.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;   
 }
 .thirteen{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 7;
     grid-row-end: 10;
+    background-image: url(../img/page-nature/20.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;   
+}
+.grid-wrap{
+    transition: all linear 1s;
+    height: 100%;
+
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.4); 
+    }
 }
 .fourteen{
     grid-column-start: 2;
     grid-column-end: 4;
+    background-image: url(../img/page-nature/8.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;   
 }
 .fiveteen{
     grid-column-start: 4;
-    grid-column-end: 5;
+    grid-column-end: 5;   
+    overflow: hidden;      
+}
+.overlay-wrap{
+    @include transformScale($size: 1.2);
+    height: 100%;
+    transition: all linear 1s;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+    &_fiveteen{
+        background-image: url(../img/page-nature/17.webp);
+    }
+    &_sixteen{
+        background-image: url(../img/page-nature/19.webp);
+    }
+    &_nineteen{
+        background-image: url(../img/page-nature/24.webp);
+    }
+        
+    &:hover{
+        @include transformScale($size: 1);
+    }
 }
 .sixteen{
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 3; 
+    overflow: hidden;     
 }
 .seventeen{
     grid-column-start: 3;
     grid-column-end: 5;
+    background-image: url(../img/page-nature/16.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
 }
 .eighteen{
     grid-column-start: 2;
     grid-column-end: 4;
+    background-image: url(../img/page-nature/23.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
 }
 .nineteen{
     grid-column-start: 4;
     grid-column-end: 5;
+    overflow: hidden;
 }
 .twenty{
     grid-column-start: 1;
     grid-column-end: 5;
+    background-image: url(../img/page-nature/25.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
 }
+

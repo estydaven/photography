@@ -1,11 +1,13 @@
-window.onscroll = function() {scrollFunction()};
-var scrollElement = document.getElementById("nav");
-function scrollFunction() {
-    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-        scrollElement.classList.add("nav-scroll");
-    } else {
-        scrollElement.classList.remove("nav-scroll");
+if ( $(".nav").length > 0 ){
+    window.onscroll = function() {scrollFunction();};
+    var scrollElement = document.getElementById("nav");
+    function scrollFunction() {
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+            scrollElement.classList.add("nav-scroll");
+        } else {
+            scrollElement.classList.remove("nav-scroll");
     }
+}
 }
 
 $("a.scroll-to").on("click", function(e){
@@ -15,3 +17,4 @@ $("a.scroll-to").on("click", function(e){
         scrollTop: $(anchor).offset().top - 60
     }, 800);
 });
+

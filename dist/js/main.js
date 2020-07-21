@@ -109,18 +109,20 @@ $(window).on('load', function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-window.onscroll = function () {
-  scrollFunction();
-};
+if ($(".nav").length > 0) {
+  var scrollFunction = function scrollFunction() {
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+      scrollElement.classList.add("nav-scroll");
+    } else {
+      scrollElement.classList.remove("nav-scroll");
+    }
+  };
 
-var scrollElement = document.getElementById("nav");
+  window.onscroll = function () {
+    scrollFunction();
+  };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-    scrollElement.classList.add("nav-scroll");
-  } else {
-    scrollElement.classList.remove("nav-scroll");
-  }
+  var scrollElement = document.getElementById("nav");
 }
 
 $("a.scroll-to").on("click", function (e) {
@@ -130,6 +132,44 @@ $("a.scroll-to").on("click", function (e) {
     scrollTop: $(anchor).offset().top - 60
   }, 800);
 });
+
+/***/ }),
+
+/***/ "./src/blocks/modules/nature-block/nature-block.js":
+/*!*********************************************************!*\
+  !*** ./src/blocks/modules/nature-block/nature-block.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+if ($(".owl-carousel").length > 0) {
+  $(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      //Зацикливаем слайдер
+      nav: false,
+      //Отключил навигацию
+      autoplay: true,
+      //Автозапуск слайдера
+      smartSpeed: 1000,
+      //Время движения слайда
+      autoplayTimeout: 4000,
+      //Время смены слайда
+      responsive: {
+        //Адаптация в зависимости от разрешения экрана
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    });
+  });
+}
 
 /***/ }),
 
@@ -159,6 +199,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _modules_nature_block_nature_block__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/nature-block/nature-block */ "./src/blocks/modules/nature-block/nature-block.js");
+/* harmony import */ var _modules_nature_block_nature_block__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_nature_block_nature_block__WEBPACK_IMPORTED_MODULE_1__);
+
 
 
 /***/ }),
