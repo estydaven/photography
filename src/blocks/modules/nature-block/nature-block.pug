@@ -1,8 +1,8 @@
 section.nature-header
     h2.nature-header__title Nature
     include ../../components/arrow-down/arrow-down.pug
-section.grid.grid__nature#down
-    .grid-block.one 
+section.grid.grid__nature
+    .grid-block.one#down 
     .grid-block.two 
     .grid-block.three 
         .overlay.overlay_three
@@ -14,8 +14,7 @@ section.grid.grid__nature#down
         .overlay.overlay_six
     .grid-block.seven 
         .overlay-back.overlay-back_seven
-    .grid-block.eight 
-        .overlay-back.overlay-back_eight
+    .grid-block.eight         
     .grid-block.nine 
         .nine__wrapper
             .nine-insects    
@@ -26,11 +25,17 @@ section.grid.grid__nature#down
         .ten__wrapper 
             .owl-carousel
                 .owl-carousel__item
-                    img(src="img/page-nature/9.webp", alt="")       
+                    picture
+                        source(srcset="img/page-nature/9.webp" type="image/webp")
+                        img(src="img/page-nature/9.jpg", alt="")       
                 .owl-carousel__item
-                    img(src="img/page-nature/12.webp", alt="")   
+                    picture
+                        source(srcset="img/page-nature/12.webp" type="image/webp")
+                        img(src="img/page-nature/12.jpg", alt="")   
                 .owl-carousel__item
-                    img(src="img/page-nature/15.webp", alt="")              
+                    picture
+                        source(srcset="img/page-nature/15.webp" type="image/webp")    
+                        img(src="img/page-nature/15.jpg", alt="")              
     .grid-block.eleven 
     .grid-block.twelve 
         .nine__wrapper.nine__wrapper_flowers
@@ -52,4 +57,24 @@ section.grid.grid__nature#down
     .grid-block.nineteen 
         .overlay-wrap.overlay-wrap_nineteen
     .grid-block.twenty 
-
+    .grid-block.twenty-one
+    .grid-block.twenty-two
+    .grid-block.twenty-three
+        .overlay-back.overlay-back_twenty-three
+    .grid-block.twenty-four
+        .overlay-back.overlay-back_twenty-four
+    .grid-block.twenty-five
+        .overlay-back.overlay-back_twenty-five
+    .grid-block.twenty-six
+        .overlay-back.overlay-back_twenty-six
+    .grid-block.twenty-seven  
+        .nine__wrapper.nine__wrapper_flowers
+            .nine-insects    
+                h1.nine-insects__title Animals&Birds
+                p.nine-insects__subtitle Funny animals and beautiful birds
+                a(href="flowers.html").nine-insects__link Explore The Project
+    .grid-block.twenty-eight
+        .overlay-back.overlay-back_twenty-eight
+    .grid-block.twenty-nine
+        .overlay-back.overlay-back_twenty-nine
+    .grid-block.thirty  

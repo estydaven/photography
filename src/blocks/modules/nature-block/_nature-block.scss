@@ -27,7 +27,7 @@
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(10, 90vh);
+    grid-template-rows: none;
 }
 .one{
     grid-column-start: 1;
@@ -37,6 +37,7 @@
     background-attachment: fixed;
     background-size: 100%;
     background-position: center center;
+    height: 90vh;
 }
 .two{
     grid-column-start: 3;
@@ -46,6 +47,7 @@
     background-size: 120% 120%;
     background-position: center center;
     transition: all linear 1s;
+    height: 90vh;
 
     &:hover{
         background-size: 100% 100%;
@@ -55,6 +57,7 @@
     grid-column-start: 1;
     grid-column-end: 2; 
     overflow: hidden;  
+    height: 70vh;
 }
 .overlay{
     height: 100%;
@@ -100,26 +103,78 @@
             transform: translateY(0%);
         }
     }
+    &_twenty-three{
+        background-image: url(../img/page-nature/29.webp);
+        transform: scale(1.2) translateY(8%); 
+
+        &:hover{
+            transform: translateY(0%);
+        }
+    }
+    &_twenty-four{
+        background-image: url(../img/page-nature/30.webp);
+        transform: scale(1.2) translateY(8%); 
+
+        &:hover{
+            transform: translateY(0%);
+        }
+    }
+    &_twenty-five{
+        background-image: url(../img/page-nature/31.webp);
+        transform: scale(1.2) translateY(8%); 
+
+        &:hover{
+            transform: translateY(0%);
+        }
+    }
+    &_twenty-six{
+        background-image: url(../img/page-nature/32.webp);
+        transform: scale(1.2) translateY(8%); 
+
+        &:hover{
+            transform: translateY(0%);
+        }
+    }
+    &_twenty-eight{
+        background-image: url(../img/page-nature/36.webp);
+        transform: scale(1.2); 
+
+        &:hover{
+            transform: scale(1);
+        }
+    }
+    &_twenty-nine{
+        background-image: url(../img/page-nature/34.webp);
+        transform: scale(1.2); 
+
+        &:hover{
+            transform: scale(1);
+        }
+    }
 }
 .four{
     grid-column-start: 2;
     grid-column-end: 3; 
-    overflow: hidden;  
+    overflow: hidden; 
+    height: 70vh; 
 }
 .five{
     grid-column-start: 3;
     grid-column-end: 4;   
     overflow: hidden; 
+    height: 70vh;
 }
 .six{
     grid-column-start: 4;
     grid-column-end: 5;
     overflow: hidden; 
+    height: 70vh;
 }
 .seven{
     grid-column-start: 1;
     grid-column-end: 3;
     overflow: hidden; 
+    height: 90vh;
 }
 .eight{
     grid-column-start: 3;
@@ -129,6 +184,7 @@
     background-attachment: fixed;
     background-size: 100%;
     background-position: center center;
+    height: 90vh;
 }
 .nine{
     grid-column-start: 1;
@@ -139,6 +195,7 @@
     background-size: cover;
     background-position: center center;
     position: relative;   
+    height: 90vh;
 }
 .nine__wrapper{
     display: flex;
@@ -187,6 +244,7 @@
     grid-column-end: 5;
     grid-row-start: 5;
     grid-row-end: 6;
+    height: 90vh;
 }
 .owl-dots{
     display: none;
@@ -199,6 +257,7 @@
     background-size: cover;
     background-position: center center;
     position: relative;   
+    height: 90vh;
 }
 .owl-carousel .owl-item img{
     height: 95vh;
@@ -211,7 +270,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    position: relative;   
+    position: relative;  
+    height: 90vh; 
 }
 .thirteen{
     grid-column-start: 1;
@@ -222,7 +282,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    position: relative;   
+    position: relative;  
+    height: 200vh; 
 }
 .grid-wrap{
     transition: all linear 1s;
@@ -306,5 +367,115 @@
     background-size: cover;
     background-position: center center;
     position: relative;
+    height: 90vh;
 }
-
+.twenty-one{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: url(../img/page-nature/27.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;  
+    height: 70vh;  
+}
+.animate{
+    animation: bg-animation 35s ease-in-out infinite;
+}
+@keyframes bg-animation {
+    0% {
+        background-size: 120%;
+        background-position: 50% 50%
+    }
+    20% {
+        background-size: 150%;
+        background-position: 0 50%;
+    }    
+    40% {
+        background-size: 140%;
+        background-position: 20% 80%;
+    }
+    60% {
+        background-size: 160%;
+        background-position: 60% 10%;
+    }
+    80% {
+        background-size: 120%;
+        background-position: 40% 70%;
+    }    
+    100% {
+        background-size: 120%;
+        background-position: 50% 50%
+    }
+}
+.twenty-two{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-image: url(../img/page-nature/26.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;  
+    height: 70vh;
+}
+.twenty-three{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    overflow: hidden; 
+    height: 70vh;
+}
+.twenty-four{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    overflow: hidden;
+    height: 70vh;
+}
+.twenty-five{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    overflow: hidden;
+    height: 70vh;
+}
+.twenty-six{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    overflow: hidden;
+    height: 70vh;
+}
+.twenty-seven{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 13;
+    grid-row-end: 15;
+    background-image: url(../img/page-nature/35.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
+.twenty-eight{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 13;
+    grid-row-end: 14;
+    overflow: hidden;
+    height: 50vh;    
+}
+.twenty-nine{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 14;
+    grid-row-end: 15;
+    overflow: hidden;
+    height: 50vh;
+}
+.thirty{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-image: url(../img/page-nature/33.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 100vh;
+}

@@ -21,3 +21,18 @@ if ( $(".owl-carousel").length > 0 ){
     });
 }
 
+
+if ( $(".twenty-one").length > 0 ){
+    var target = $('.twenty-one');
+    var targetPos = target.offset().top;
+    var winHeight = $(window).height();
+    var scrollToElem = targetPos - winHeight;
+    $(window).scroll(function(){
+      var winScrollTop = $(this).scrollTop();
+      if(winScrollTop > scrollToElem){
+        $('.twenty-one').addClass('animate');
+      }   else if(winScrollTop < scrollToElem){
+        $('.twenty-one').removeClass('animate');
+      }
+    });
+}
